@@ -1,0 +1,158 @@
+/* stylesheet.css */
+@charset "UTF-8";
+@import url("_fonts.css");
+
+
+/* --- Colors --- */
+
+/* 
+AlmostWhite: #FCFFF5;
+LightGreenGrey: #D1DBBD;
+TealGrey: #91AA9D;
+MainBlue: #3E606F;
+DarkBlue: #193441;
+*/
+
+/* --- FONTS --- */
+
+h1 {
+	font-family: ralewaythin;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 100;
+}
+
+h2 {
+	font-family: source_sans_proregular;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+}
+
+h3 {
+	font-family: ralewayregular;
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+h4 {
+	font-family: source_sans_probold;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+h5 {
+	font-family: source_sans_proregular;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 100;
+}
+
+p {
+	font-family: source_sans_proregular;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+a {
+	font-family: ralewaythin;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-header {
+	font-size: 114px;
+	line-height: 114px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.sub-header {
+	margin-top: 5px;
+}
+
+.super-header {
+	margin-top: 35px;
+	margin-bottom: 5px;
+}
+
+/* --- Containers --- */
+
+body, html, .container {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	min-width: 100%;
+	height: 100%;
+}
+
+.container {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+#landing-section {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+
+	background: url('../img/SPF_Kitchen_S_Shot01_POV_v001.0030.png') no-repeat center center;
+}
+
+#about {
+	height: 100%;
+	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
+
+	background: #FCFFF5;
+}
+
+/* --- Navbar --- */
+
+.nav-bar {
+	height: 50px;
+	width: 100%;
+	background: rgba(0,0,0,0.65);
+	text-align: center;
+}
+
+.nav-bar nav {
+	padding: 0px;
+	display: inline-block;
+	background: rgba(0,0,0,0.25);
+}
+ 
+.nav-bar nav a {
+	padding: 14px 20px;
+	display: inline-block;
+}
+	.nav-bar nav a:hover {
+		background: rgba(0,0,0,0.15);
+	}
+	.nav-bar nav a:visited {
+		text-decoration: none;
+		color: #fff;
+	}
+
+/* --- Jumbotron --- */
+.jumbotron {
+	border-top: 50px solid rgba(0,0,0,0.65);
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+}
+
+#about .jumbotron {
+	border-top: 15px solid blue;
+	border-bottom: 15px solid blue;
+}
