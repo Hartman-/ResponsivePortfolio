@@ -9,14 +9,26 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="styles/lib/idangerous.swiper.css">
+		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 
+		<!-- FONT AWESOME -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- SCRIPTS -->
 		<script src="js/lib/jquery-2.1.1.min.js"></script>
 		<script defer src="js/lib/idangerous.swiper.min.js"></script>
 		<script src="js/portfolio-scripts.js"></script>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!--[if IE]>
+
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+		<![endif]-->
 	</head>
 
 	<body>
@@ -40,7 +52,7 @@
 					<span data-dir="right" class="nav-arrows fa fa-2x fa-chevron-right right"></span>
 
 					<!-- SWIPER BEGIN -->
-					<div class="swiper-container">
+					<div class="swiper-container main-swiper">
 					  	<div class="swiper-wrapper">
 
 					      	<!-- Home Slide -->
@@ -56,7 +68,32 @@
 					      	<!-- Work Slide -->
 					      	<div class="swiper-slide">
 					      		<div class="vert-center">
-						        	<h1  class="section-header">Work</h1>
+						        	
+					      			<div class="swiper-container work-swiper">
+									  	<div class="swiper-wrapper">
+									      	<!--First Slide-->
+									      	<div class="swiper-slide"> 
+									        	<h1>Salt & Pepper: Forever</h1>
+									        	<iframe src="//player.vimeo.com/video/114107055" width="500" height="281" frameborder="0"></iframe>
+									        	<p>Tech: Maya 2015, NukeX 8, Mental Ray for Maya 2015</p>
+									      	</div>
+									      
+									      	<!--Second Slide-->
+									      	<div class="swiper-slide">
+									        	<h1>Slide 02</h1>
+									      	</div>
+									      
+									     	<!--Third Slide-->
+									      	<div class="swiper-slide"> 
+									        	<h1>Slide 03</h1>
+									      	</div>
+									      	<!--Etc..-->
+									  	</div>
+
+									  	<div class="pagination"></div>
+
+									</div>
+
 								</div>
 					      	</div>
 					      	<!-- End Work Slide -->
@@ -65,8 +102,6 @@
 					      	<div class="swiper-slide"> 
 					      		<div class="vert-center">
 					      			<div class="content-wrapper">
-
-					        			<h1 class="section-header">About</h1>
 
 					        			<p>Bacon ipsum dolor amet tail doner shoulder fatback kevin. Biltong spare ribs rump, shoulder venison fatback tenderloin beef. Tail turducken shank meatloaf, sirloin landjaeger cow. Turkey beef ribs meatloaf biltong beef bresaola shank spare ribs leberkas drumstick flank chuck strip steak short ribs. Jowl pork chop pig, swine brisket doner shoulder ground round kielbasa. Corned beef picanha pork belly salami pork ground round, shankle shoulder. Shankle tail chicken, ball tip prosciutto biltong frankfurter meatball ham.</p>
 

@@ -168,6 +168,7 @@ body, html, .container {
 			&.active {
 				background: rgba(0,0,0,0.15);
 				color: @AlmostWhite;
+				font-weight: 600;
 			}
 			&.external {
 				color: @AlmostWhite;
@@ -230,9 +231,44 @@ body, html, .container {
 
 /* --- SWIPER SETTINGS --- */
 
-.swiper-container, .swiper-slide {
+.swiper-container,
+.main-swiper .swiper-slide {
 	width: 100%;
-	height: auto;
+	height: 100%;
+}
+
+.swiper-container.work-swiper {
+	max-height: 500px;
+	max-width: 960px;
+}
+
+.work-swiper .swiper-slide {
+	width: 100%;
+	height: 500px;
+}
+
+.pagination {
+	position: absolute;
+	z-index: 20;
+	left: 20%;
+	top: 25%;
+
+	.swiper-pagination-switch {
+		display: block;
+		width: 15px;
+		height: 15px;
+		border-radius: 15px;
+		background: rgba(0,0,0,0.5);
+		margin: 0 0px 10px;
+		border: 1px solid #fff;
+		cursor: pointer;
+	}
+
+	.swiper-active-switch {
+		background: @AlmostWhite;
+	}
+
+		
 }
 
 /* --- CONTACT FORM --- */

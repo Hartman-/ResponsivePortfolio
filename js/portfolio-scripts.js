@@ -5,22 +5,41 @@ $(document).ready(function() {
     // ===
 
     // Create slider on load (first thing in order for calculations to work)	
-    var pageSwiper = $('#landing-section .swiper-container').swiper({
+    var pageSwiper = $('#landing-section .swiper-container.main-swiper').swiper({
         //Your options here:
         mode:'horizontal',
         speed: 1000,
-        loop: true,
+        loop: false,
         calculateHeight: true,
-        simulateTouch: false,
+        simulateTouch: false, 
         onSlideChangeStart: function() {
             $('nav.page-nav a').removeClass('active');
-            $('nav.page-nav a').eq(pageSwiper.activeIndex - 1).addClass('active');
+            $('nav.page-nav a').eq(pageSwiper.activeIndex).addClass('active');
+
+            if(pageSwiper.activeIndex == 0) {
+                $('span.nav-arrows.left').fadeOut();
+            }
+            else {
+                $('span.nav-arrows.left').fadeIn();   
+            }
         }
+    });
+
+    var workSwiper = $('#landing-section .swiper-container.work-swiper').swiper({
+        //Your options here:
+        mode:'vertical',
+        speed: 1000,
+        loop: true,
+        pagination: '.pagination',
+        paginationClickable: true,
+        calculateHeight: true,
+        cssWidthAndHeight: true
     });
 
     // Center content on load
     var vertPadding = calcPadding();
     $('.container #landing-section .jumbotron').css('top', vertPadding+"px");
+    $('span.nav-arrows.left').hide();
 
 
 
