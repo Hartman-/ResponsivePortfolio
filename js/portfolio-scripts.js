@@ -1,30 +1,40 @@
 $(document).ready(function() {
 	
+  var pageSwiper = $('#landing-section .swiper-container').swiper({
+    //Your options here:
+    mode:'horizontal',
+    loop: true,
+    calculateHeight: true
+    //etc..
+  });
 
 
-	var vertPadding = ($('.container #landing-section').height() - 360) / 2;
-	$('.container #landing-section .jumbotron').css('margin-top', vertPadding+"px");
+	var vertPadding = calcPadding();
+	$('.container #landing-section .jumbotron').css('top', vertPadding+"px");
 
 	$(window).resize(function() {
-		var vertPadding = ($('.container #landing-section').height() - 360) / 2;
-		$('.container #landing-section .jumbotron').css('margin-top', vertPadding+"px");
+		var vertPadding = calcPadding();
+		$('.container #landing-section .jumbotron').css('top', vertPadding+"px");
 	});
+
+  function calcPadding() {
+    amtPadding = ($('.container #landing-section').height() - $('.container #landing-section .jumbotron').height() - 50) / 2;
+    return amtPadding;
+  }
 
 	// ===
 	// SCROLLING FUNCTIONALITY
 	// ===
 
-	function scrollTarget(target) {
+	function swipeTarget(target) {
     	var duration = 1200;
-
-    	$('html, body').animate({scrollTop: $("#" + target).offset().top}, duration);
+      pageSwiper.swipeTo(target, 1000);
   	}
 
   	$('nav a').click(function(e) {
-    	var target = $(this).attr('href').substring(1);
-    	console.log(target);
+    	var target = $(this).index();
 
-    	scrollTarget(target);
+    	swipeTarget(target);
     	e.preventDefault();
   	});
 

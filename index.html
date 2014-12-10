@@ -8,10 +8,12 @@
 		<title>Ian Hartman | Animator</title>
 
 		<!-- CSS -->
+		<link rel="stylesheet" href="styles/lib/idangerous.swiper.css">
 		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 
 		<!-- SCRIPTS -->
 		<script src="js/lib/jquery-2.1.1.min.js"></script>
+		<script defer src="js/lib/idangerous.swiper.min.js"></script>
 		<script src="js/portfolio-scripts.js"></script>
 	</head>
 
@@ -22,26 +24,59 @@
 			<div id="landing-section">
 
 				<div class="jumbotron">
-					<h5 class="super-header">Hello, my name is</h5>
-					<h1 class="main-header">Ian Hartman</h1>
-					<h5 class="sub-header">Animator & Web Developer</h5>
+
+					<div class="nav-bar">
+						<nav>
+							<a href="#">Home</a>
+							<a href="#">Work</a>
+							<a href="#">About</a>
+							<a href="#">Contact</a>
+						</nav>
+					</div>
+
+					<div class="swiper-container">
+					  	<div class="swiper-wrapper">
+
+					      	<!-- Home Slide -->
+					      	<div class="swiper-slide">
+					      		<div class="vert-center">
+						        	<h5 class="super-header">Hello, my name is</h5>
+									<h1 class="main-header">Ian Hartman</h1>
+									<h5 class="sub-header">Animator & Web Developer</h5>
+								</div>
+					      	</div>
+					      	<!-- End Home Slide -->
+					      
+					      	<!-- Work Slide -->
+					      	<div class="swiper-slide">
+					      		<div class="vert-center">
+						        	<h1  class="section-header">Work</h1>
+								</div>
+					      	</div>
+					      	<!-- End Work Slide -->
+					      
+					      	<!-- About Slide -->
+					      	<div class="swiper-slide"> 
+					      		<div class="vert-center">
+					        		<h1 class="section-header">About</h1>
+					      		</div>
+					      	</div>
+					      	<!-- End About Slide -->
+
+					      	<!-- Contact Slide -->
+					      	<div class="swiper-slide">
+					      		<div class="vert-center">
+					      			<h1 class="section-header">Contact</h1>
+					      		</div>
+					      	</div>
+					      	<!--End Contact Slide-->
+					  	</div>
+					</div>
+
+					
 				</div>
 
-				<div class="nav-bar">
-					<nav>
-						<a href="#">Work</a>
-						<a href="#about">About</a>
-						<a href="#">Contact</a>
-					</nav>
-				</div>
-
-			</div>
-
-			<div id="about">
-
-				<div class="jumbotron">
-					<h2>About Me</h2>
-				</div>
+				
 
 			</div>
 
