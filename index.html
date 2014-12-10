@@ -11,6 +11,8 @@
 		<link rel="stylesheet" href="styles/lib/idangerous.swiper.css">
 		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 		<!-- SCRIPTS -->
 		<script src="js/lib/jquery-2.1.1.min.js"></script>
 		<script defer src="js/lib/idangerous.swiper.min.js"></script>
@@ -26,14 +28,18 @@
 				<div class="jumbotron">
 
 					<div class="nav-bar">
-						<nav>
-							<a href="#">Home</a>
+						<nav class="page-nav">
+							<a href="#" class="active">Home</a>
 							<a href="#">Work</a>
 							<a href="#">About</a>
 							<a href="#">Contact</a>
 						</nav>
 					</div>
 
+					<span data-dir="left" class="nav-arrows fa fa-2x fa-chevron-left left"></span>
+					<span data-dir="right" class="nav-arrows fa fa-2x fa-chevron-right right"></span>
+
+					<!-- SWIPER BEGIN -->
 					<div class="swiper-container">
 					  	<div class="swiper-wrapper">
 
@@ -42,7 +48,7 @@
 					      		<div class="vert-center">
 						        	<h5 class="super-header">Hello, my name is</h5>
 									<h1 class="main-header">Ian Hartman</h1>
-									<h5 class="sub-header">Animator & Web Developer</h5>
+									<h5 class="sub-header">I'm an Animator & Web Developer</h5>
 								</div>
 					      	</div>
 					      	<!-- End Home Slide -->
@@ -58,7 +64,15 @@
 					      	<!-- About Slide -->
 					      	<div class="swiper-slide"> 
 					      		<div class="vert-center">
-					        		<h1 class="section-header">About</h1>
+					      			<div class="content-wrapper">
+
+					        			<h1 class="section-header">About</h1>
+
+					        			<p>Bacon ipsum dolor amet tail doner shoulder fatback kevin. Biltong spare ribs rump, shoulder venison fatback tenderloin beef. Tail turducken shank meatloaf, sirloin landjaeger cow. Turkey beef ribs meatloaf biltong beef bresaola shank spare ribs leberkas drumstick flank chuck strip steak short ribs. Jowl pork chop pig, swine brisket doner shoulder ground round kielbasa. Corned beef picanha pork belly salami pork ground round, shankle shoulder. Shankle tail chicken, ball tip prosciutto biltong frankfurter meatball ham.</p>
+
+										<p>Pastrami spare ribs frankfurter, tri-tip short ribs sausage kevin ball tip shoulder filet mignon ribeye pancetta. Pastrami ground round pork loin landjaeger capicola sirloin hamburger turkey shank meatloaf brisket. Tri-tip turducken landjaeger, biltong flank tongue shoulder frankfurter filet mignon pork belly ball tip. Meatball ground round sirloin, meatloaf alcatra picanha drumstick shoulder beef ribs. Pork chop ribeye flank, pancetta pork belly ham filet mignon fatback rump tenderloin sausage corned beef leberkas beef. Shank fatback turkey, doner swine t-bone pancetta kevin ball tip pig cupim cow. Pork boudin ball tip chicken swine.</p>
+
+					        		</div>
 					      		</div>
 					      	</div>
 					      	<!-- End About Slide -->
@@ -66,13 +80,40 @@
 					      	<!-- Contact Slide -->
 					      	<div class="swiper-slide">
 					      		<div class="vert-center">
-					      			<h1 class="section-header">Contact</h1>
+					      			<div class="content-wrapper">
+
+					      				<div id="form_container">
+
+					      					<h4 class="section-header contact">Email me at: </h4>
+					      					<p>ian.hartman95@gmail.com</p>
+
+											<form action="contact/contact_mailer.php" method="post">
+													<fieldset>
+													<legend>Send it Now!</legend>
+													<hr />
+													<label>Name:</label>  <input type="text" name="name" size="30" maxlength="100">
+													<label>Email:</label> <input type="email" name="email" size="30" maxlength="100">
+													<label>Message:</label> <textarea name="message"></textarea>
+													<input name="submit" type="submit" value="Send Message" />
+													</fieldset>
+											</form>
+										</div>
+
+
+					      			</div>
 					      		</div>
 					      	</div>
 					      	<!--End Contact Slide-->
 					  	</div>
 					</div>
+					<!-- END SWIPER -->
 
+					<div class="nav-bar">
+						<nav>
+							<a href="#" class="external">Linkedin</a>
+							<a href="#" class="external">Vimeo</a>
+						</nav>
+					</div>
 					
 				</div>
 
