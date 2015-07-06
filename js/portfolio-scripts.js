@@ -17,12 +17,30 @@ $(document).ready(function() {
             $('nav.page-nav a').eq(pageSwiper.activeIndex).addClass('active');
 
             if(pageSwiper.activeIndex == 0) {
+
                 $('span.nav-arrows.left').fadeOut();
+                ga('send', 'event', 'Home', 'click', 'nav-buttons');
+            }
+            else if(pageSwiper.activeIndex == 1) {
+
+                $('span.nav-arrows.left').fadeIn(); 
+                ga('send', 'event', 'Work', 'click', 'nav-buttons');
+            }
+            else if(pageSwiper.activeIndex == 2) {
+
+                $('span.nav-arrows.left').fadeIn(); 
+                ga('send', 'event', 'About', 'click', 'nav-buttons');
+            }
+            else if(pageSwiper.activeIndex == 3) {
+
+                $('span.nav-arrows.left').fadeIn(); 
+                ga('send', 'event', 'Contact', 'click', 'nav-buttons');
             }
             else {
                 $('span.nav-arrows.left').fadeIn();   
             }
-        }
+        },
+        preventLinksPropagation: true
     });
 
     var workSwiper = $('#landing-section .swiper-container.work-swiper').swiper({
@@ -33,7 +51,8 @@ $(document).ready(function() {
         pagination: '.pagination',
         paginationClickable: true,
         calculateHeight: true,
-        cssWidthAndHeight: true
+        cssWidthAndHeight: true,
+        preventLinksPropagation: true
     });
 
     // Center content on load
