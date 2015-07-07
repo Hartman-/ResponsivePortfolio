@@ -1,5 +1,6 @@
 /* stylesheet.css */
 @charset "UTF-8";
+@import url("swiper.min.css");
 @import url("_fonts.css");
 
 
@@ -31,8 +32,8 @@
 /* --- FONTS --- */
 
 h1 {
-	font-family: ralewaythin;
-	font-size: 48px;
+	font-family: ralewaybold;
+	font-size: 56px;
 	line-height: 48px;
 	font-weight: 100;
 }
@@ -45,7 +46,7 @@ h2 {
 }
 
 h3 {
-	font-family: ralewayregular;
+	font-family: ralewaythin;
 	font-size: 28px;
 	line-height: 28px;
 	font-weight: 400;
@@ -130,6 +131,7 @@ body, html {
 		-ms-transform: translateX(-50%) translateY(-50%);
 		transform: translateX(-50%) translateY(-50%);
 		text-align: center;
+		color: @AlmostWhite;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -158,34 +160,49 @@ body, html {
 }
 
 .nav {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 3rem;
-		background: red;
-		text-align: center;
-		z-index: 1;
-	}
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3rem;
+	background: red;
+	z-index: 2;
+}
 
-	.nav-item, .nav-menu {
-		display: inline-block;
-		font-family: Open Sans;
-		color: #FFFFFF;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
-		height: 3rem;
-		line-height: 3rem;
-		font-size: 0.9rem;
-		font-weight: 300;
-		cursor: pointer;
-		text-decoration: none;
+.nav-left {
+	display: inline-block;
+	text-align: left;
+}
 
-		&.selected, &:hover {
-			background: rgba(0,0,0,0.1);
-		}
+.nav-right {
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+
+.nav-center {
+	text-align: center;
+}
+
+
+.nav-item, .nav-menu {
+	display: inline-block;
+	font-family: Open Sans;
+	color: #FFFFFF;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+	cursor: pointer;
+	text-decoration: none;
+
+	&.selected, &:hover {
+		background: rgba(0,0,0,0.1);
 	}
+}
 
 .nav-mobile {
 	display: none;
@@ -194,32 +211,6 @@ body, html {
 		width: 100%;
 		box-sizing: border-box;
 	}
-}
-
-
-#landing-section {
-	height: 100%;
-	width: 100%;
-	min-height: 100%;
-	min-width: 100%;
-
-	background: url('@{img}/SPF_Kitchen_S_Shot01_POV_v001.0030.png') no-repeat center center;
-	background-size: cover;
-}
-
-#about {
-	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-
-	height: 100%;
-	width: 100%;
-	min-width: 100%;
-	min-height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	padding: 15px;
 }
 
 /* --- Navbar --- */
@@ -261,12 +252,10 @@ body, html {
 .nav-arrows {
 	height: 50px;
 	line-height: 50px;
-	position: absolute !important;
+	color: blue;
 
 	padding: 15px;
 	z-index: 10;
-
-	.vert-center();
 
 	&.left {
 		left: 0;
@@ -311,45 +300,31 @@ body, html {
 }
 
 /* --- SWIPER SETTINGS --- */
+.swiper-pagination {
+	position: static;
+	text-align: left;
+	margin: 10px 0px;
 
-.swiper-container,
-.main-swiper .swiper-slide {
-	width: 100%;
-	height: 100%;
-}
-
-.swiper-container.work-swiper {
-	max-height: 500px;
-	max-width: 960px;
-}
-
-.work-swiper .swiper-slide {
-	width: 100%;
-	height: 500px;
-}
-
-.pagination {
-	position: absolute;
-	z-index: 20;
-	left: 20%;
-	top: 25%;
-
-	.swiper-pagination-switch {
-		display: block;
+	.swiper-pagination-bullet {
 		width: 15px;
 		height: 15px;
-		border-radius: 15px;
-		background: rgba(0,0,0,0.5);
-		margin: 0 0px 10px;
-		border: 1px solid #fff;
-		cursor: pointer;
+		margin: 0px 2px;
 	}
+}
 
-	.swiper-active-switch {
-		background: @AlmostWhite;
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
-
-		
 }
 
 @media (max-width: 768px) {
