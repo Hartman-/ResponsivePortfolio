@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* stylesheet.css */
-@import url("swiper.min.css");
 @import url("_fonts.css");
 /* --- VARIABLES --- */
 /* --- // Paths --- */
@@ -113,7 +112,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   max-width: 1000px;
-  margin: auto;
+  margin: 1rem auto;
 }
 .section h1,
 .section h2,
@@ -121,7 +120,7 @@ html {
 .section h4,
 .section h5,
 .section h6 {
-  text-align: center;
+  margin-bottom: 2rem;
 }
 .section.grey {
   background: #f3f3f3;
@@ -160,6 +159,16 @@ html {
   font-weight: 600;
   font-family: Open Sans;
   min-height: 100%;
+}
+.card h4 {
+  margin-bottom: 2rem;
+}
+.contact-link {
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #db6c0f;
+  text-decoration: none;
+  font-size: 1rem;
 }
 .nav {
   position: absolute;

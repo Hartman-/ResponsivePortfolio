@@ -53,15 +53,14 @@ $(document).ready(function() {
     // ===
 
     // Create slider on load (first thing in order for calculations to work)	
-    var pageSwiper = new Swiper('.section .section-reel .swiper-container.reel-swiper', {
+    /*var pageSwiper = new Swiper('.section .section-reel .swiper-container.reel-swiper', {
         //Your options here:
         mode:'horizontal',
         speed: 1000,
         loop: true,
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        simulateTouch: true,
-        preventLinksPropagation: true
+        simulateTouch: true
     });
 
 	// ===
@@ -79,7 +78,7 @@ $(document).ready(function() {
         }
 
         e.preventDefault();
-    });
+    });*/
 
   	// ===
   	// END SCROLLING
