@@ -31,11 +31,12 @@ h4 {
 }
 h5 {
   font-family: open_sansbold;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 100;
 }
-p {
+p,
+li {
   font-family: open_sanslight;
   font-size: 18px;
   line-height: 22px;
@@ -118,9 +119,12 @@ html {
 .section h2,
 .section h3,
 .section h4,
-.section h5,
 .section h6 {
   margin-bottom: 2rem;
+}
+.section ul {
+  margin: 16px 0px;
+  padding-left: 40px;
 }
 .section.grey {
   background: #f3f3f3;
