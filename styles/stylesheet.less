@@ -10,20 +10,24 @@
 	@img: "../img";
 	
 	/* --- // Colors --- */
-	@LightGrey: #b3b3b3;
+	@LightGrey: #374140;
 	@TealGrey: #91AA9D;
 	@MainBlue: #3E606F;
 	@DarkBlue: #193441;
 
 	@punchColor: #DB6C0F;
-	@offWhite: #FCFFF5;
-	@whiteGrey: #F3F3F3;
+	
+	@offWhite: #FFFFFA;
+	@brownGrey: #A1A194;
+	@whiteGrey: #464646;
+	@mediumGrey: #5B605F;
+	@orange: #FF6600;
 
 /* --- FONTS --- */
 
 h1 {
 	font-family: ralewaybold;
-	font-size: 56px;
+	font-size: 72px;
 	line-height: 48px;
 	font-weight: 100;
 }
@@ -69,7 +73,7 @@ a {
 	line-height: 22px;
 	font-weight: 400;
 	text-decoration: none;
-	color: @LightGrey;
+	color: @offWhite;
 }
 
 
@@ -112,7 +116,7 @@ body, html {
 .landing {
 	width: 100%;
 	height: 100%;
-	background: url('@{img}/SPF_Kitchen_S_Shot01_POV_v001.0030.png') no-repeat center center;
+	background: url('@{img}/background.jpg') no-repeat center center;
 	background-size: cover;
 
 	.landing-box {
@@ -126,9 +130,13 @@ body, html {
 		color: @offWhite;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h4, h5, h6 {
 		text-align: center;
 		white-space: nowrap;
+	}
+	h3 {
+		padding: 5px;
+		text-align: right;
 	}
 }
 
@@ -140,11 +148,18 @@ body, html {
 	    margin: auto;
 	}
 
+.icon {
+	width: 12%;
+	box-sizing: border-box;
+	margin: auto;
+}
+
 .section {
 	width: 100%;
 	padding-top: 2rem;
 	padding-bottom: 4rem;
-	color: #444444;
+	color: #fffffa;
+	background: @mediumGrey;
 	font-weight: 400;
 
 	.section-content {
@@ -152,6 +167,7 @@ body, html {
 		box-sizing: border-box;;
 		max-width: 1000px;
 		margin: 1rem auto;
+		padding: 0rem 1rem;
 	}
 
 	h1, h2, h3, h4, h6 {
@@ -167,6 +183,9 @@ body, html {
 		background: @whiteGrey;
 	}
 
+	&.footer {
+		padding-bottom: 1rem;
+	}
 	
 }
 
@@ -194,16 +213,20 @@ body, html {
 	&.w-9 {
 		width: 75%;
 	}
+	&.w-12 {
+		width: 100%;
+	}
+	&.centered {
+		text-align: center;
+	}
 }
 
 .card {
 	width: 100%;
 	padding: 1rem;
 	box-sizing: border-box;
-	background: @offWhite;
-	border: 1px solid #E0E0E0;
-	border-radius: 0.3rem;
-	box-shadow: 0 1px 0 #E0E0E0;
+	border-radius: 5px;
+	background: @mediumGrey;
 	text-align: center;
 	font-weight: 600;
 	font-family: open_sansregular;
@@ -211,6 +234,14 @@ body, html {
 
 	h4 {
 		margin-bottom: 2rem;
+		color: @offWhite;
+	}
+	p {
+		color: @offWhite;
+	}
+
+	&.padded {
+		padding: 4rem;
 	}
 }
 
@@ -219,7 +250,24 @@ body, html {
 	font-family: open_sansregular;
 	color: @punchColor;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.5rem;
+}
+
+.icon-link {
+	padding-right: 0.5rem;
+}
+
+.padded-section {
+	padding: 1rem;
+	margin: 0rem 1rem;
+}
+
+.centered-section {
+	text-align: center;
+}
+
+.copy {
+	padding: 1rem 0rem;
 }
 
 .nav {
@@ -228,8 +276,8 @@ body, html {
 	right: 0;
 	bottom: 0;
 	width: 100%;
-	height: 3rem;
-	background: @punchColor;
+	height: 4rem;
+	background: @orange;
 	z-index: 2;
 }
 
@@ -255,9 +303,9 @@ body, html {
 	color: #FFFFFF;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
-	height: 3rem;
-	line-height: 3rem;
-	font-size: 0.9rem;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 1rem;
 	font-weight: 300;
 	cursor: pointer;
 	text-decoration: none;
@@ -400,6 +448,14 @@ body, html {
 	.col {
 		&.w-3, &.w-6, &.w-9 {
 			width: 100%;
+		}
+	}
+	.padded-section {
+		margin: 0px;
+	}
+	.card {
+		&.padded {
+			padding: 4rem 0rem;
 		}
 	}
 }

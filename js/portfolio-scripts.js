@@ -98,6 +98,7 @@ $(window).scroll(function() {
         $(selector).css({'position':'absolute','top':'auto','bottom':'0'});
     }
     var current = '#home';
+    if($(window).scrollTop() >= $('a[name=applications]').parent().offset().top-$('.nav').height()) current = '#applications';
     if($(window).scrollTop() >= $('a[name=about]').parent().offset().top-$('.nav').height()) current = '#about';
     if($(window).scrollTop() >= $('a[name=reel]').parent().offset().top-$('.nav').height())  current = '#reel';
     if($(window).scrollTop() >= $('a[name=contact]').parent().offset().top-$('.nav').height()) current = '#contact';
