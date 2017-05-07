@@ -117,6 +117,11 @@ html {
   width: 12%;
   box-sizing: border-box;
   margin: auto;
+  background-color: none;
+  border-radius: 5px;
+}
+.icon.selected {
+  background-color: #5b605f;
 }
 .section {
   width: 100%;
@@ -156,6 +161,9 @@ html {
   display: block;
   clear: both;
 }
+#application-title {
+  padding-left: 1rem;
+}
 .col {
   float: left;
   position: relative;
@@ -183,7 +191,7 @@ html {
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 5px;
-  background: #5b605f;
+  background: #464646;
   text-align: center;
   font-weight: 600;
   font-family: open_sansregular;

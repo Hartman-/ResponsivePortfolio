@@ -15,7 +15,7 @@
 
 		<!-- SCRIPTS -->
 		<script src="js/lib/jquery-2.1.1.min.js"></script>
-		<script src="js/lib/lightbox.min.js"></script>
+		<!--<script src="js/lib/lightbox.min.js"></script>-->
 
 		<!--<script defer src="js/lib/swiper.min.js"></script>-->
 		<script src="js/portfolio-scripts.js"></script>
@@ -44,8 +44,9 @@
 
 			<div class="nav-right">
 				<a href="#home" class="nav-item">Ian Hartman</a>
-				<a class="nav-item" href="https://www.linkedin.com/pub/ian-hartman/74/792/946" target="_blank"><i class="fa fa-linkedin-square"></i>  Linkedin</a>
-				<a class="nav-item" href="https://vimeo.com/user28854305" target="_blank"><i class="fa fa-vimeo-square"></i>  Vimeo</a>
+				<a class="nav-item" href="https://www.linkedin.com/pub/ian-hartman/74/792/946" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+				<a class="nav-item" href="https://vimeo.com/user28854305" target="_blank"><i class="fa fa-vimeo-square"></i></a>
+				<a class="nav-item" href="https://github.com/Hartman-" target="_blank"><i class="fa fa-github-square"></i></a>
 			</div>
 
 		</div>
@@ -54,12 +55,14 @@
 			<div class="nav-center">
 				<a class="nav-menu">MENU</a>
 				<a href="#home" class="nav-item selected">HOME</a>
+				<a href="#applications" class="nav-item">APPS</a>
 				<a href="#about" class="nav-item">ABOUT</a>
 				<a href="#reel" class="nav-item">REEL</a>
 				<a href="#contact" class="nav-item">CONTACT</a>
 
-				<a class="nav-item" href="https://www.linkedin.com/pub/ian-hartman/74/792/946" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+				<a class="nav-item" href="https://www.linkedin.com/pub/ian-hartman/74/792/946" target="_blank"><i class="fa fa-linkedin-square"></i> Linkedin</a>
 				<a class="nav-item" href="https://vimeo.com/user28854305" target="_blank"><i class="fa fa-vimeo-square"></i> Vimeo</a>
+				<a class="nav-item" href="https://github.com/Hartman-" target="_blank"><i class="fa fa-github-square"></i> Github</a>
 			</div>
 		</div>
 
@@ -76,19 +79,76 @@
 			<div class="section-content">
 				<h2>APPLICATIONS</h2>
 				<div class="col w-12 centered">
-					<img src="img/icons/icon_Houdini_w-01.png" class="icon">
-					<img src="img/icons/icon_Nuke_w-01.png" class="icon">
-					<img src="img/icons/icon_Maya_w-01.png" class="icon">
-					<img src="img/icons/icon_Renderman_w-01.png" class="icon">
-					<img src="img/icons/icon_Vray_w-01.png" class="icon">
-					<img src="img/icons/icon_Python_w-01.png" class="icon">
-					<img src="img/icons/icon_Pyside_w-01.png" class="icon">
-					<img src="img/icons/icon_Github_w-01.png" class="icon">
+					<img src="img/icons/icon_Houdini_w-01.png" title="Houdini" class="icon">
+					<img src="img/icons/icon_Nuke_w-01.png" title="Nuke" class="icon">
+					<img src="img/icons/icon_Maya_w-01.png" title="Maya" class="icon">
+					<img src="img/icons/icon_Renderman_w-01.png" title="Renderman" class="icon">
+					<img src="img/icons/icon_3ds_w-01.png" title="3ds-Max" class="icon">
+					<img src="img/icons/icon_Vray_w-01.png" title="Vray" class="icon">
+					<img src="img/icons/icon_Python_w-01.png" title="Python" class="icon">
+					<!--<img src="img/icons/icon_Pyside_w-01.png" class="icon">-->
+					<!--<img src="img/icons/icon_Github_w-01.png" class="icon">-->
 				</div>
 			</div>
 		</div>
 
 		<div class="section">
+			<a name="app-descriptions"></a>
+			<div class="section-content">
+				<h4 id="application-title">Houdini</h4>
+				<div class="col w-12 app-desc" id="Houdini">
+					<p>Houdini is my software package of choice, covering all aspects of the pipeline it gives me great flexibility to concept, develop, and deliver projects.</p>
+					<ul>
+						<li>Created a variety of effects across multiple shots, inluduing fire/smoke, dust, a fractured planetary core, rocket engines, and VDB clouds to name a few.</li>
+						<li>Learned Houdini during off-hours throughout the past year to gain a level of comfort before going into my capstone project.</li>
+					</ul>
+				</div>
+				<div class="col w-12 app-desc" id="Nuke">
+					<p>Usually NukeX.</p>
+					<ul>
+						<li>Bash comping new fx renders to compositing the final shot, I rarely don't have Nuke open.</li>
+						<li>Developed a script to create burn-ins for dailies as well as a command line script generator.</li>
+					</ul>
+				</div>
+				<div class="col w-12 app-desc" id="Maya">
+					<p>The backbone of my team's capstone project, Maya was the obvious choice to ground the project in for asset creation and scene construction.</p>
+					<ul>
+						<li>Integration of pipeline tools built with Python.</li>
+						<li>Modeling, Rigging, Animation, Shading, Lighting, FX, and Rendering... Experienced the full breadth of the pipeline in one program.</li>
+					</ul>
+				</div>
+				<div class="col w-12 app-desc" id="3ds-Max">
+					<p>Cleaned and rebuilt assets from AutoCad and Revit to be used for final renderings. Often jumped between jobs to lend support where it was needed.</p>
+					<ul>
+						<li>Multiple roles from scene building to shader development.</li>
+						<li>Developed shot environments to give key buildings context.</li>
+					</ul>
+				</div>
+				<div class="col w-12 app-desc" id="Renderman">
+					<p>Current render engine of choice, just edging out Mantra... I can use both in Houdini. Effective use of RIB archives kept scene generation times low and the pipeline flexible.</p>
+					<ul>
+						<li>Debugging render errors and optimizing scenes to get the most of out the engine.</li>
+						<li>Custom Renderman workspace to give artist's piece of mind knowing their renders will work locally or on the renderfarm.</li>
+					</ul>
+				</div>
+				<div class="col w-12 app-desc" id="Vray">
+					<p>I was part of a small team at Brooklyn Digital Foundry that specialized in Architectural Visualization where our primary render engine was V-ray. V-ray offered us the ability to develop realistic shaders and lighting at a speed that kept the render farm busy and allowed for quick iteration.</p>
+					<ul>
+						<li>Used with both Maya and 3ds Max for multiple projects, mainly Architectural Visualization work.</li>
+						<li>Learned on my own time early second year as the curriculm at the time wasn't teaching students Vray.</li>
+					</ul>
+				</div>
+				<div class="col w-12 app-desc" id="Python">
+					<p>Python is the backbone of my work to make my process more efficient. Writing small tools that shave time or that automate the small tasks make the world of difference. As well as building a launcher that enables my team's artist to quickly launch into shots and not have to worry about the small things like file naming conventions or even just giving Maya a more proper iterate and save.</p>
+					<ul>
+						<li>Sequence renaming to launcher/pipeline management, Python serves a variety of roles in my everyday work.</li>
+						<li>Use of PyQT/Pyside for GUI for their native integration into current software packages. Easy to write code for one application and transfer to another.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="section grey">
 			<a name="about"></a>
 			<div class="section-content">
 				<h2>ABOUT</h2>
@@ -100,7 +160,7 @@
 				<div class="col w-9">
 					<p>Currently a Animation & Visual Effects major at Drexel University, on track to graduate in June 2017.</p>
 					<br>
-					<p>I have a passion for creating effects, building tools, and maintaining a pipeline. I am the main TD for my capstone project, for which my responsibilities include: </p>
+					<p>I have a passion for creating effects, building tools, and maintaining a pipeline. I am the Technical Director for my team's capstone project, for which my responsibilities include: </p>
 					<ul>
 						<li>Creating numerous effects in Houdini for multiple shots throughout the piece.</li>
 						<li>Implementing and maintaining pipeline tools using Python & PySide to enable artists to work without worrying.</li>
@@ -112,7 +172,7 @@
 			</div>
 		</div>
 
-		<div class="section grey">
+		<div class="section">
 			<a name="reel"></a>
 			<div class="section-content section-reel">
 				<h2>DEMO REEL</h2>
@@ -152,7 +212,7 @@
 			</div>
 		</div>
 
-		<div class="section">
+		<div class="section grey">
 			<a name="test"></a>
 			<div class="section-content">
 				<h2>REEL BREAKDOWN</h2>
@@ -193,7 +253,7 @@
 			</div>
 		</div>
 
-		<div class="section grey">
+		<div class="section">
 			<a name="contact"></a>
 			<div class="section-content">
 				<h2>CONTACT</h2>
@@ -210,12 +270,14 @@
 			</div>
 		</div>
 
-		<div class="section footer">
+		<div class="section grey footer">
 			<div class="section-content">
 				<a class="icon-link" href="https://www.linkedin.com/pub/ian-hartman/74/792/946" target="_blank">
 					<i class="fa fa-linkedin-square fa-2x"></i></a>
 				<a class="icon-link" href="https://vimeo.com/user28854305" target="_blank">
 					<i class="fa fa-vimeo-square fa-2x"></i></a>
+				<a class="icon-link" href="https://github.com/Hartman-" target="_blank">
+					<i class="fa fa-github-square fa-2x"></i></a>
 				<p class="copy">Ian Hartman 2017.</p>
 			</div>
 		</div>

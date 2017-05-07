@@ -2,6 +2,11 @@ var menuOpen = false;
 
 $(document).ready(function() {
 
+    $('.app-desc').hide()
+    $('.icon[title="Houdini"').addClass('selected');
+    $('#Houdini').show()
+
+
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -46,6 +51,30 @@ $(document).ready(function() {
 
     $('.nav-mobile .nav-item').click(function() {
         closeMenu();
+    });
+
+    $('.icon').click(function(e) {
+        $('.icon').removeClass('selected');
+
+        var id_string = $(this).attr('title');
+        $('.icon[title="'+id_string+'"').addClass('selected');
+        var title_array = id_string.split("-");
+        var title = '';
+        
+        if (title_array.length > 1) {
+           for (i=0; i<title_array.length; i++) {
+                title += title_array[i];
+                title += ' ';
+           }
+           console.log(title);
+        } else {
+            title = title_array[0];
+        }
+
+        $('#application-title').text(title);
+        $('.app-desc').hide();
+
+        $('#'+id_string+'').show();
     });
 
     // ===
